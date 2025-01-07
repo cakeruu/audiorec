@@ -1,0 +1,44 @@
+{
+  "name": "audiorec-vite-svelte",
+  "private": true,
+  "version": "1.0.0",
+  "author": "cakeruu",
+  "main": "dist-electron/main.js",
+  "description": "A simple dekstop audio recorder app",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "build:win": "tsc && vite build && electron-builder --win",
+    "build:mac": "tsc && vite build && electron-builder --mac",
+    "build:linux": "tsc && vite build && electron-builder --linux",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/utils": "^3.0.0",
+    "electron-log": "^5.2.4",
+    "electron-store": "8.2.0",
+    "electron-updater": "^6.1.7",
+    "ffmpeg-static": "^5.2.0",
+    "lucide-svelte": "^0.469.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tsconfig/svelte": "^5.0.4",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "autoprefixer": "^10.4.20",
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3",
+    "eslint": "^8.57.0",
+    "postcss": "^8.4.49",
+    "svelte": "^5.15.0",
+    "svelte-check": "^4.1.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.2.2",
+    "vite-plugin-electron": "^0.28.6",
+    "vite-plugin-electron-renderer": "^0.14.5"
+  }
+}
