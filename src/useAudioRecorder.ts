@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// hooks/useAudioRecorder.ts
 import { writable } from 'svelte/store';
 import type { DesktopCapturerSource } from 'electron';
 
