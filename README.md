@@ -13,6 +13,7 @@ A simple desktop audio recorder app built with **Svelte**, **TypeScript**, and *
 ## Usage
 
 Run `npm run dev` to start the development server.
+Run `npm run build:<your_platform>` to build the app.
 
 **Controls:**
 - Red circle button: Start recording
